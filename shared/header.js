@@ -4,7 +4,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Dimensions } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-export default function Header() {
+export default function Header({ title }) {
   const navigation = useNavigation();
 
   const openMenu = () => {
@@ -21,7 +21,7 @@ export default function Header() {
       />
 
       <View>
-        <Text style={styles.headerText}>GameZone</Text>
+        <Text style={styles.headerText}>{title}</Text>
       </View>
     </View>
   );

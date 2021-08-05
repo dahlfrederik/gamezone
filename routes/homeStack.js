@@ -4,12 +4,9 @@ import Home from "../screens/home";
 import ReviewDetails from "../screens/reviewDetails";
 import Header from "../shared/header";
 
-
 const Stack = createStackNavigator();
 
 export default HomeStack = () => {
-
-
   return (
     <Stack.Navigator
       initialRouteName="Home"
@@ -24,7 +21,7 @@ export default HomeStack = () => {
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{ headerTitle: () => <Header /> }}
+        options={{ headerTitle: () => <Header title={"GameZone"} /> }}
       />
       <Stack.Screen
         name="ReviewDetails"

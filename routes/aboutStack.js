@@ -20,7 +20,7 @@ export default AboutStack = () => {
       <Stack.Screen
         name="About"
         component={About}
-        options={{ headerTitle: () => <Header /> }}
+        options={{ headerTitle: () => <Header title={"About GameZone"} /> }}
       />
     </Stack.Navigator>
   );
